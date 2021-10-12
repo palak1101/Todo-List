@@ -1,35 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3ea2e21759.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
     <title>Todo-List</title>
 </head>
+
 <body>
     <header>
         Lorem, ipsum dolor.
     </header>
 
+    <section class="main-container">
+        <div class="container">
+
+            <div class="title">
+                <h2>Todo List</h2>
+                <input type="checkbox" id="toggle" />
+                <label class="toggle-label" for="toggle">Switch</label>
+            </div>
+
+            <div class="input-section">
+                <input type="text" placeholder="Add a task to the list" class="placeholder-text">
+                <a href="#"><i class="fas fa-plus"></i></a>
+            </div>
+
+            
+
+                <ol class="nav-label">
+
+                    <div class="taskbar third">
+
+                        <div class="start-item">
+                            <a href="#">
+                                <div class="item ext-item">2-Items</div>
+                            </a>
+                        </div>
+    
+                        
+                        
+                        <div style= "display:flex" class="task-manager">
+                            <a href="#">
+                                <div class="item">All</div>
+                            </a>
+                            <a href="#">
+                                <div class="item">Pending</div>
+                            </a>
+                            <a href="#">
+                                <div class="item">Completed</div>
+                            </a>
+                        </div>
+                        
+                        
+    
+                        <div class="end-item">
+                            <a href="#">
+                                <div class="item ext-item">Clear</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="list-items">
+                        <!-----------------------Remove after adding here through js---------------------->
+                        <div class="task-container">
+                            <input type="checkbox" id="list-task2" class="checkbox-round">
+                            <label for="list-task2">Return home at 7:00 </label>
+                        </div>
+                        
+                        <!--------------------------------------------------------------------------------------->
+                    </div>
+                    
+                    
+                </ol>
+                
+
+        </div>
+
+    </section>
+
+
+
+
     <footer>
         <div>
-            <a href="#">Palak Tiwari</a>
+            <a href="#" target="_blank">Palak Tiwari</a>
         </div>
 
         <div>
-            <a href="#">
-                <img class="social-icons" src="./assets/instagram.png" alt="">
+            <a href="https://www.instagram.com/">
+                <i class="fab fa-instagram footer-icons"></i>
             </a>
 
-            <a href="#">
-                <img class="social-icons" src="./assets/linkedin.png" alt="">
+            <a href="https://www.linkedin.com/in/palak-tiwari-a05236206">
+                <i class="fab fa-linkedin-in footer-icons"></i>
             </a>
 
-            <a href="#">
-                <img class="social-icons" src="./assets/github.png" alt="">
+            <a href="https://github.com/palak1101">
+                <i class="fab fa-github footer-icons"></i>
             </a>
         </div>
     </footer>
+
+
 </body>
+
 </html>

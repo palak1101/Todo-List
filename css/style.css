@@ -12,6 +12,8 @@
 }
 
 
+/*********************************************Header*********************************************/
+
 header{
     background-image: url('../assets/day.jpeg');
     background-size: cover;
@@ -20,8 +22,226 @@ header{
 }
 
 
+.main-container{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.container{
+    /* border: 3px solid green; */
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: -200px;
+}
+
+/*****************************************First-Row*************************************************/
+
+.title{ 
+    /* border: 3px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.title h2{
+    font-size: 30px;
+}
+
+
+#toggle{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.toggle-label {
+    cursor: pointer;
+    position: relative;
+    text-indent: -9999px;
+    width:80px;
+    height: 35px;
+    background: #fff;
+    display: block;
+    border-radius: 10px;
+}
+
+.toggle-label:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background: #f6d327;
+    border-radius: 90px;
+    transition: 0.4s;
+}
+
+#toggle:checked + .toggle-label {
+    background: #111;
+}
+
+#toggle:checked + .toggle-label:after {
+    background: #E63E6D;
+}
+
+#toggle:checked + .toggle-label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.toggle-label:active:after {
+    width: 80px;
+}
+
+/*************************************************Second-Row********************************************/
+
+.input-section{
+    /* border: 3px solid red; */
+    background-color: #fff;
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.placeholder-text{
+    font-size: 1.3rem;
+}
+
+.input-section input{
+    /* border: 3px solid yellow; */
+    border: none;
+    background: transparent;
+    flex-basis: 80%;
+    padding: 0.4rem;
+}
+
+.input-section .fas.fa-plus{
+    /* border: 3px solid yellow; */
+    flex-basis: 20%;
+    padding-left: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.input-section .fas.fa-plus:hover{
+    color: #4f4dde;
+}
+
+
+/***********************************************Third-Row********************************************/
+
+
+.nav-label{
+    /* border: 3px solid black; */
+    margin-top: 50px;
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+
+ol .third{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 0.5s ease-out;
+}
+
+
+ol .taskbar {
+    font-size: 0.9rem !important;
+    font-weight: 500;
+    background-color: #fff;
+    color: grey;
+    margin: 0px 10px;
+    opacity: 1;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.task-manager{
+    /* margin: 0px 45px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ext-item{
+    padding: 10px;
+}
+
+
+.task-manager div{
+    padding: 0px 5px;
+}
+
+.item:hover{
+    color: #4f4dde;
+}
+
+
+.list-items{
+    margin: 0px 10px;
+}
+
+
+
+
+/***************************************List-Items***************************************************/
+
+.task-container{
+    /* border: 3px solid blue; */
+    margin: 15px 0px;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(19, 22, 22, 0.5);
+}
+
+
+/* label{
+    vertical-align: middle;
+} */
+
+
+.checkbox-round{
+    width: 1rem;
+    height: 1rem;
+    /* background-color: gray; */
+    border-radius: 50%;
+    vertical-align: middle;
+    /* appearance: none; */
+    /* -webkit-appearance: none; */
+    outline: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.checkbox-round:checked{
+    background-image: linear-gradient(90deg, #ff0f7b , #f89b29);
+}
+
+
+/*******************************************************Footer*************************************/
+
 footer{
-    background-color: #f1f1f1;
+    background-color: #c4c3c3;
     color: #4f4dde;
     font-size: 1.2rem;
     display: flex;
@@ -34,7 +254,12 @@ footer{
 }
 
 
-img.social-icons{
-    width: 25px;
+.footer-icons{
     margin: 0px 10px;
+    color: #000;
+}
+
+
+.footer-icons:hover{
+    transform: scale(1.5);
 }
